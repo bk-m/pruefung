@@ -26,3 +26,8 @@ program Name und Kurzbeschreibung
    Resultate in HTML-Datei schreiben
 end program Name
 ```
+
+## Anwendungsfalldiagramm (use-case-diagram)
+> [Anwendungsfalldiagramm auf Wikipedia](https://de.wikipedia.org/wiki/Anwendungsfalldiagramm)
+
+![ucd](ucd.png)
