@@ -14,6 +14,8 @@
 
 ![RDBM](rdbm.png)
 
+> BEIM PRIMÄRSCHLÜSSEL IST IMMER DIE `1`, BEIM FOREIGN KEY IST IMMER `n`!!!
+
 ## Test DB
 ```sql
 DROP TABLE cities CASCADE;
