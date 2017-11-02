@@ -4,7 +4,7 @@
 > - [02](https://zeroturnaround.com/rebellabs/sql-cheat-sheet/)
 > - [03](https://www.w3schools.com/sql/sql_quickref.asp)
 
-![SQL cheat sheet](sql_cs.png)
+![SQL cheat sheet](img/sql_cs.png)
 
 ```sql
 -- equi join (ignore this construct if using JOIN)

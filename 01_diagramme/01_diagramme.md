@@ -1,13 +1,13 @@
 ## Programm-Ablaufplan (PAP)
 > [PAP auf Wikipedia](https://de.wikipedia.org/wiki/Programmablaufplan)
 
-![PAP](img/pap.jpg?raw=true)
+![PAP](img/pap.jpg)
 
 
 ## Nassi-Shneiderman-Diagramm (Struktogramm)
 > [NSD auf Wikipedia](https://de.wikipedia.org/wiki/Nassi-Shneiderman-Diagramm)
 
-![NSD](img/nsd.png?raw=true)
+![NSD](img/nsd.png)
 
 ## Pseudocode
 > [Pseudocode auf Wikipedia](https://de.wikipedia.org/wiki/Pseudocode)
@@ -30,4 +30,4 @@ end program Name
 ## Anwendungsfalldiagramm (use-case-diagram)
 > [Anwendungsfalldiagramm auf Wikipedia](https://de.wikipedia.org/wiki/Anwendungsfalldiagramm)
 
-![ucd](img/ucd.png?raw=true)
+![ucd](img/ucd.png)
