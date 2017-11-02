@@ -18,12 +18,23 @@ WHERE
   o.customerid = c.customerid;
 ```
 
-## Data Manipulating Language (DML)
-- select?
+## Data Manipulation Language (DML)
+> [DML auf Wikipedia](https://de.wikipedia.org/wiki/Data_Manipulation_Language)  
+> add, modify, delete data
+- truncate
 - update
 - insert
 - delete
 
 ## Data Query Language (DQL)
+> retrieve information
+- select
+- show
+- help
 
 ## Data Definition Language (DDL)
+> [DDL auf Wikipedia](https://en.wikipedia.org/wiki/Data_definition_language)  
+> add, modify, delete the logical structures which contain the data or user access - DDL is about 'metadata'
+- create
+- alter
+- drop
