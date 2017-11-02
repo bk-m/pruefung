@@ -17,3 +17,13 @@ FROM
 WHERE
   o.customerid = c.customerid;
 ```
+
+## Data Manipulating Language (DML)
+- select
+- update
+- insert
+- delete
+
+## Data Query Language (DQL)
+
+## Data Definition Language (DDL)
