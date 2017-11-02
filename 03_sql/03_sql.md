@@ -19,7 +19,7 @@ WHERE
 ```
 
 ## Data Manipulating Language (DML)
-- select
+- select?
 - update
 - insert
 - delete
