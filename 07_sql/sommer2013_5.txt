@@ -32,5 +32,3 @@ select Nachname, Vorname, Geb_Datum, year(TODAY() - Geb_Datum) as Alter
 from Mitarbeiter
 where Nachname like "Sch%" and year(TODAY() - Geb_Datum) >= 36
 order by Alter DESC, Nachname ASC
-
-testing

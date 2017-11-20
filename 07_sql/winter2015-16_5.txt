@@ -1,0 +1,29 @@
+Winter 2015/2016, 5. Aufgabe
+
+a)
+update Artikel set Art_Markierung = case when Art_MwStSatz = 7 then 1 else 0 end;
+
+b)
+select (select count(*) from rechnung where year(Rg_Datum) = 2015 and Rg_KdID = Kd_Id) as AnzRechnung,
+		Kd_Id, Kd_Name, Kd_Vorname, Kd_Strasse, Kd_PLZ, Kd_Ort
+from Kunde
+join Zahlungsbedingung on Zb_ID = Kd_ZbID
+where Zb_SkontoProzent > 3
+
+c)
+select * from Kunde
+where Kd_Name like "%oe%" or Kd_Name like "%ö%" or Kd_Name like "%öe%"
+
+d)
+// alle orte, anzahl der kunden aus dem ort, order by anzahl desc
+select count(*) as AnzKunde, Kd_Ort
+from Kunde
+group by Kd_Ort
+order by AnzKunde DESC
+
+e)
+select 'Kunde' as Tabellenname, Kd_Id as ID, Kd_Name as Name, Kd_PLZ as PLZ, Kd_Ort as Ort
+from Kunde
+UNION
+select 'Lieferant', Lf_ID, Lf_Firma, Lf_PLZ, Lf_Ort
+from Lieferant
