@@ -1,7 +1,7 @@
 Winter 2015/2016, 5. Aufgabe
 
 a)
-update Artikel set Art_Markierung = case when Art_MwStSatz = 7 then 1 else 0 end;
+update Artikel set Art_Markierung = case Art_MwStSatz when 7 then 1 else 0 en d;
 
 b)
 select (select count(*) from rechnung where year(Rg_Datum) = 2015 and Rg_KdID = Kd_Id) as AnzRechnung,
@@ -27,3 +27,4 @@ from Kunde
 UNION
 select 'Lieferant', Lf_ID, Lf_Firma, Lf_PLZ, Lf_Ort
 from Lieferant
+order by Name DESC
