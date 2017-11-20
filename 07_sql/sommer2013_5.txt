@@ -1,0 +1,34 @@
+Sommer 2013, 5. Aufgabe
+
+a)
+update Mitarbeiter set ArbeitszeitTag = 5 where Ma_Id = 812
+
+b)
+select count(*) from Mitarbeiter where ArbeitszeitTag < 6.5
+
+c)
+select m.Ma_Id, m.Nachname, m.Vorname, sum(f.Fehltage) from Mitarbeiter as m
+join Fehlzeit as f on f.Ma_Id = m.Ma_Id
+group by m.Ma_Id, m.Nachname, m.Vorname, f.Fehlgrund
+
+d)
+// einsatzzeiten alles mitarbeiter im feb. 2013
+select m.Ma_Id, m.Nachname, m.Vorname, sum(e.Bis_Zeit - e.Von_Zeit)
+from Mitarbeiter as m
+join Einsatz as e on e.Ma_Id = m.Ma_Id
+where year(e.Datum) = 2013 and month(e.Datum) = 2
+group by m.Ma_Id, m.Nachname, m.Vorname
+
+e)
+// resturlaub alles mitarbeiter 2013
+select m.Ma_Id, m.Vorname, m.Nachname, m.UrlaubJahr - f.Fehltage
+from Mitarbeiter as m
+join Fehlzeit as f on f.Ma_Id = m.Ma_Id
+where year(f.Von_Datum) = 2013 and f.Fehlgrund = 'Urlaub'
+
+f)
+// nachname beginnt mit "sch", im jahr der abfrage >=36 jahre werden, nach alter absteigend, nach nachname aufsteigend
+select Nachname, Vorname, Geb_Datum, year(TODAY() - Geb_Datum) as Alter
+from Mitarbeiter
+where Nachname like "Sch%" and year(TODAY() - Geb_Datum) >= 36
+order by Alter DESC, Nachname ASC
